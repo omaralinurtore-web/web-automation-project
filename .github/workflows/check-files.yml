@@ -1,0 +1,35 @@
+
+name: Web Project Automation
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  check-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get repository files
+        uses: actions/checkout@v4
+
+      - name: Check HTML file
+        run: |
+          if [ -f index.html ]; then
+            echo "SUCCESS: index.html табылды"
+          else
+            echo "ERROR: index.html табылмады"
+            exit 1
+          fi
+
+      - name: Check CSS file
+        run: |
+          if [ -f style.css ]; then
+            echo "SUCCESS: style.css табылды"
+          else
+            echo "ERROR: style.css табылмады"
+            exit 1
+          fi
