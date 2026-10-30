@@ -1,0 +1,36 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    text-align: center;
+}
+
+header {
+    background: #2563eb;
+    color: white;
+    padding: 40px 20px;
+}
+
+main {
+    background: white;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #2563eb;
+}
+
+footer {
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+}
